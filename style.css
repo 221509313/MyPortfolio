@@ -127,6 +127,27 @@ form button:hover {
     background-color: #0056b3;
     border-color: #0056b3;
   }
+
+.profile-img {
+  width: 150px; /* Adjust this size as needed */
+  height: 150px; /* Adjust this size as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+@media (max-width: 768px) {
+  .profile-img {
+    width: 120px; /* Adjust this size as needed for smaller screens */
+    height: 120px; /* Adjust this size as needed for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 100px; /* Adjust this size as needed for very small screens */
+    height: 100px; /* Adjust this size as needed for very small screens */
+  }
+}
+
   
   hr {
     background-color: white;
