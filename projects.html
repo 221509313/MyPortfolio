@@ -6,11 +6,31 @@
   <title>Bootstrap Cards</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for responsive images */
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+    /* Ensures that cards fit well on smaller screens */
+    .card {
+      margin-bottom: 20px;
+    }
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 576px) {
+      .card-title {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
@@ -32,32 +52,24 @@
           <a href="ui_ux.html"><img src="Azure developer.jpg" class="card-img-top" alt="UI/UX Design"></a>
           <div class="card-body">
             <h5 class="card-title">UX/UI Design</h5>
-          
-           
           </div>
         </div>
       </div>
 
-      <!-- Repeat similar structure for other cards -->
       <div class="col-md-4 mb-4">
         <div class="card h-100">
-          <a href="ui_ux.html"><img src="UIUX.jpg" class="card-img-top" alt="UI/UX Design"></a>
+          <a href="ui_ux.html"><img src="UIUX.jpg" class="card-img-top" alt="Azure Developer"></a>
           <div class="card-body">
             <h5 class="card-title">Azure Developer</h5>
-          
-            
           </div>
         </div>
       </div>
 
-      <!----->
       <div class="col-md-4 mb-4">
         <div class="card h-100">
-          <a href="ui_ux.html"><img src="website developer.jpg" class="card-img-top" alt="UI/UX Design"></a>
+          <a href="ui_ux.html"><img src="website developer.jpg" class="card-img-top" alt="Website Developer"></a>
           <div class="card-body">
             <h5 class="card-title">Website Developer</h5>
-  
-           
           </div>
         </div>
       </div>
@@ -70,3 +82,4 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
