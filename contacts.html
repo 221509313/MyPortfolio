@@ -23,29 +23,31 @@
   </nav>
 
   <div class="container mt-5">
-    
-<form action="https://api.web3forms.com/submit" method="POST">
-    <h1 class="text-center text-primary">Contact Form</h1>
-    <hr>
+    <form action="https://api.web3forms.com/submit" method="POST" class="w-100">
+      <h1 class="text-center text-primary">Contact Form</h1>
+      <hr>
+      <input type="hidden" name="access_key" value="3315f2dc-08a9-4f8c-af3e-af7b6d654798">
 
-        <input type="hidden" name="access_key" value="3315f2dc-08a9-4f8c-af3e-af7b6d654798">
-       
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email" class="form-control" placeholder="Enter your Email..." required>
+      </div>
 
-        <div>
-            <label for="#">Email</label><br>
-            <input type="text" name="Email" id="Email" style="width: 23%;" placeholder="Enter your Email...">
-        </div><br>
-        <div>
-            <label for="#">Phone</label><br>
-            <input type="text" name="Phone" id="Phone" style="width: 23%;" placeholder="Enter your Phone Number...">
-        </div><br>
-        <div>
-            <label for="#">Message</label><br>
-            <textarea rows="10" cols="50" name="Message" id="Message" placeholder="Enter your Message here..." style="resize: none;"></textarea>
-        </div>
+      <div class="form-group">
+        <label for="Phone">Phone</label>
+        <input type="tel" name="Phone" id="Phone" class="form-control" placeholder="Enter your Phone Number..." required>
+      </div>
 
-        <button style="background-color: aquamarine; width: 16%; height: 30px; border-radius: 20px;margin-top: 20px;">Send</button>
+      <div class="form-group">
+        <label for="Message">Message</label>
+        <textarea name="Message" id="Message" class="form-control" rows="5" placeholder="Enter your Message here..." required></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
     </form>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
