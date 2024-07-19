@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Cards</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PORTFOLIO</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    
+<form action="https://api.web3forms.com/submit" method="POST">
+    <h1 class="text-center text-primary">Contact Form</h1>
+    <hr>
+
+        <input type="hidden" name="access_key" value="3315f2dc-08a9-4f8c-af3e-af7b6d654798">
+       
+
+        <div>
+            <label for="#">Email</label><br>
+            <input type="text" name="Email" id="Email" style="width: 23%;" placeholder="Enter your Email...">
+        </div><br>
+        <div>
+            <label for="#">Phone</label><br>
+            <input type="text" name="Phone" id="Phone" style="width: 23%;" placeholder="Enter your Phone Number...">
+        </div><br>
+        <div>
+            <label for="#">Message</label><br>
+            <textarea rows="10" cols="50" name="Message" id="Message" placeholder="Enter your Message here..." style="resize: none;"></textarea>
+        </div>
+
+        <button style="background-color: aquamarine; width: 16%; height: 30px; border-radius: 20px;margin-top: 20px;">Send</button>
+    </form>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
